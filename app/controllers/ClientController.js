@@ -304,6 +304,10 @@
 
                              var healthcard_data = {
                                                 "application_id":ClientService.application_id,
+				     		 "d":d,
+                                                "m":m,
+                                                "y":y,
+                                                "hid":hid
                                                };
                             $http.put("/healthcard/approved/", healthcard_data).then(
                                 function(response){
