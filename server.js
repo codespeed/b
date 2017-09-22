@@ -256,6 +256,9 @@ app.put('/healthcard/approved', function(req, res){
 	db.healthcards.findAndModify({query: {"application_id": req.body.application_id}, 
 										update: {$set: {
 											request_status : "approved",
+											 d:req.body.d,
+							                	 	 m:req.body.m,
+							                		 y:req.body.y
 							        	}}
 										}, function(err, docs){
 											res.json(docs);
