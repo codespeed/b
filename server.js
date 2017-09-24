@@ -263,7 +263,7 @@ app.put('/healthcard/approved', function(req, res){
 											 d:req.body.d,
 							                	 	 m:req.body.m,
 							                		 y:req.body.y,
-											 hc_id: ts2
+											 hid: ts2
 											
 							        	}}
 										}, function(err, docs){
@@ -471,17 +471,17 @@ app.post('/events/count', function(req, res){
 });
 
 app.get('/healthcards/daily/:d', function(req, res){
-	db.healthcards.find({d:req.params.d},{hid:1,hc_lastname:1, hc_firstname:1, hc_job_category:1, hc_position:1, hc_business_employment:1, d:1 , hc_id:1},function(err, docs){
+	db.healthcards.find({d:req.params.d},{hid:1,hc_lastname:1, hc_firstname:1, hc_job_category:1, hc_position:1, hc_business_employment:1, d:1 , hid:1},function(err, docs){
 		res.json(docs);
 	})
 });
 app.get('/healthcards/monthly/:m/:y', function(req, res){
-	db.healthcards.find({m:req.params.m, y:parseInt(req.params.y)},{hid:1,hc_lastname:1, hc_firstname:1, hc_job_category:1, hc_position:1, hc_business_employment:1, d:1, hc_id:1},function(err, docs){
+	db.healthcards.find({m:req.params.m, y:parseInt(req.params.y)},{hid:1,hc_lastname:1, hc_firstname:1, hc_job_category:1, hc_position:1, hc_business_employment:1, d:1, hid:1},function(err, docs){
 		res.json(docs);
 	})
 });
 app.get('/healthcards/yearly/:y', function(req, res){
-	db.healthcards.find({y:parseInt(req.params.y)},{hid:1,hc_lastname:1, hc_firstname:1, hc_job_category:1, hc_position:1, hc_business_employment:1, d:1, hc_id:1},function(err, docs){
+	db.healthcards.find({y:parseInt(req.params.y)},{hid:1,hc_lastname:1, hc_firstname:1, hc_job_category:1, hc_position:1, hc_business_employment:1, d:1, hid:1},function(err, docs){
 		res.json(docs);
 		console.log(docs);
 	})
