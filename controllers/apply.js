@@ -87,12 +87,12 @@ module.exports = {
 
 
 				// Configure the request
-				var options = {
+		/*var options = {
 			    url: 'http://api.txtlocal.com/send/',
 			    method: 'POST',
 			    headers: headers,
 			    form: data
-				}
+				}*/
 
 				var  txtlocal_username = "eprosessohealth@gmail.com";
 				var txtlocal_password= "eprosesso2017";
