@@ -287,7 +287,7 @@
 
                             var client_data = {
                                                 "_id":ClientService.application_id,
-                                                "date_expired_number":date_expired_number,
+                                                "date_expired_number":parseInt(date_expired_number),
                                                 "date_expired_text":date_expired_text,
                                                 "d":d,
                                                 "m":m,
