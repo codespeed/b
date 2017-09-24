@@ -4,7 +4,9 @@ var express = require('express');
 var app = express();
 var mongojs = require('mongojs');
 //var db = mongojs('project-db', ['applications','healthcards', 'accounts', 'events']);
-var db= mongojs('mongodb://eproseso:eproseso@ds059682.mlab.com:59682/eproseso', ['applications','healthcards']);
+///var db= mongojs('mongodb://eproseso:eproseso@ds059682.mlab.com:59682/eproseso', ['applications','healthcards']);
+mongodb://<db>:<dbpassword>@ds147274.mlab.com:47274/eproseso
+var db= mongojs('mongodb://eprosesso:eprosesso2017@ds147274.mlab.com:47274/eproseso', ['applications','healthcards']);
 var bodyParser = require('body-parser');
 var urlencode = require('urlencode');
 var mongoose = require('mongoose');
