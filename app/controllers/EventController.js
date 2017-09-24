@@ -231,7 +231,7 @@
                     };
                      
                       var options = {
-                        message: 'Are you sure you want to delete?',
+                        message: 'Are you sure you want to save?',
                         buttons: {
                              warning: {
                                  label: "No",
