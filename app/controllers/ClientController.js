@@ -473,7 +473,7 @@
                 hc_position : jq("#r_job_position").val(),
                 hc_business_employment: jq("#r_business_employment").val(),
                 hc_middlename : jq("#r_middlename").val(),
-                hc_age : jq("#r_age").val(),
+               // hc_age : jq("#r_age").val(),
                 hc_ethnic_group: jq("#r_ethnic_group").val(),
                 hc_lastname : jq("#r_lastname").val(),
                 hc_firstname : jq("#r_firstname").val(),
