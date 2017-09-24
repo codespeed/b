@@ -23,7 +23,7 @@ module.exports = mongoose.model('Application', {
 	profile_picture : String(),
 	account_status : String(),
 	type:String(),
-	date_expired_text: String(),
+	date_expired_text: Integer(),
     date_expired_number:String(),
     d:String(),
     m:String(),
