@@ -71,7 +71,7 @@ app.post('/auth/login', auth.login);
 
 //Connection
 //mongoose.connect("mongodb://localhost:27017/project-db", function (err, db) {
-mongoose.connect("mongodb://eproseso:eproseso@ds059682.mlab.com:59682/eproseso", function (err, db) {
+mongoose.connect("mongodb://eprosesso:eprosesso2017@ds147274.mlab.com:47274/eproseso", function (err, db) {
     if (!err) {
         console.log("we are connected to mongo online");
     }
