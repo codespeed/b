@@ -252,13 +252,19 @@ app.put('/healthcard/update', function(req, res){
 										})
 });
 
+var d = new Date();
+var ts = d.getTime();
+var ts2 = Math.floor(new Date().valueOf() / 1000)+ts;
+
 app.put('/healthcard/approved', function(req, res){
 	db.healthcards.findAndModify({query: {"application_id": req.body.application_id}, 
 										update: {$set: {
 											request_status : "approved",
 											 d:req.body.d,
 							                	 	 m:req.body.m,
-							                		 y:req.body.y
+							                		 y:req.body.y,
+											 hc_id: ts2
+											
 							        	}}
 										}, function(err, docs){
 											res.json(docs);
