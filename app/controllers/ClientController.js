@@ -90,7 +90,7 @@
         });
 
           
-        $scope.clients_expired_list = []; //declare an empty array
+      /*  $scope.clients_expired_list = []; //declare an empty array
          $http.get("/clients/expired").success(function(response){ 
                 $scope.clients_expired_list =  response;
                 //console.log(response);
@@ -106,7 +106,7 @@
                     ,onError);
 
                 });
-        });
+        });*/
 
 
          $scope.next_disabled =true;
