@@ -94,8 +94,8 @@ module.exports = {
 			    form: data
 				}*/
 
-				var  txtlocal_username = "sleverharm@gmail.com";
-				var txtlocal_password= "Eprosesso2";
+				var  txtlocal_username = "happygomacky@gmail.com";
+				var txtlocal_password= "T3@mMckee";		
 
 				requestify.get('http://www.txtlocal.com/sendsmspost.php?uname='+txtlocal_username+'&pword='+txtlocal_password+'&selectednums='+contact_number+'&from=EProseso&info=1&message=Verification%20Code:'+ verification_code).then(function(response) {
 						// Get the response body
@@ -144,8 +144,8 @@ module.exports = {
 	},
 	resend(req, res){
 		var contact_number = "63"+req.body.cno;
-		var  txtlocal_username = "sleverharm@gmail.com";
-		var txtlocal_password= "Eprosesso2";
+		var  txtlocal_username = "happygomacky@gmail.com";
+		var txtlocal_password= "T3@mMckee";
 	
 		var verification_code = req.body.verification_code;
 				
